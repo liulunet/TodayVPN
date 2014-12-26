@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E844CBD19E8D77E00718351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844CBC19E8D77E00718351 /* main.m */; };
+		9E844CC019E8D77E00718351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844CBF19E8D77E00718351 /* AppDelegate.m */; };
+		9E844CC319E8D77E00718351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844CC219E8D77E00718351 /* ViewController.m */; };
+		9E844CC619E8D77E00718351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E844CC419E8D77E00718351 /* Main.storyboard */; };
+		9E844CC819E8D77E00718351 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E844CC719E8D77E00718351 /* Images.xcassets */; };
+		9E844CCB19E8D77E00718351 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E844CC919E8D77E00718351 /* LaunchScreen.xib */; };
+		9E844CD719E8D77E00718351 /* TodayVPNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844CD619E8D77E00718351 /* TodayVPNTests.m */; };
+		9EE1268B19E8DC1C009EAE74 /* TKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */; };
+		9EE1268D19E8DC8C009EAE74 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */; };
+		9EE1269119E910EF009EAE74 /* VPNConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1269019E910EF009EAE74 /* VPNConfigManager.m */; };
+		9EE1269919E91D2D009EAE74 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE1269819E91D2D009EAE74 /* NotificationCenter.framework */; };
+		9EE1269F19E91D2D009EAE74 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1269E19E91D2D009EAE74 /* TodayViewController.m */; };
+		9EE126A119E91D2D009EAE74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE126A019E91D2D009EAE74 /* MainInterface.storyboard */; };
+		9EE126A419E91D2D009EAE74 /* TodayVPNExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9EE1269619E91D2C009EAE74 /* TodayVPNExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9EE126AB19E91D4E009EAE74 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */; };
+		9EE126AC19E91D55009EAE74 /* TKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */; };
+		9EE126AD19E91D55009EAE74 /* VPNConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1269019E910EF009EAE74 /* VPNConfigManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E844CD119E8D77E00718351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E844CAF19E8D77E00718351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E844CB619E8D77E00718351;
+			remoteInfo = TodayVPN;
+		};
+		9EE126A219E91D2D009EAE74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E844CAF19E8D77E00718351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE1269519E91D2C009EAE74;
+			remoteInfo = TodayVPNExtension;
+		};
+		9EE126A519E91D2D009EAE74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E844CAF19E8D77E00718351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE1269519E91D2C009EAE74;
+			remoteInfo = TodayVPNExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EE126AA19E91D2D009EAE74 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9EE126A419E91D2D009EAE74 /* TodayVPNExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E844CB719E8D77E00718351 /* TodayVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E844CBB19E8D77E00718351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E844CBC19E8D77E00718351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E844CBE19E8D77E00718351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E844CBF19E8D77E00718351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E844CC119E8D77E00718351 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9E844CC219E8D77E00718351 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E844CC519E8D77E00718351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E844CC719E8D77E00718351 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E844CCA19E8D77E00718351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9E844CD019E8D77E00718351 /* TodayVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E844CD519E8D77E00718351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E844CD619E8D77E00718351 /* TodayVPNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayVPNTests.m; sourceTree = "<group>"; };
+		9EE1268919E8DC1C009EAE74 /* TKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKeyChain.h; sourceTree = "<group>"; };
+		9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKeyChain.m; sourceTree = "<group>"; };
+		9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		9EE1268E19E8DC8C009EAE74 /* TodayVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayVPN.entitlements; sourceTree = "<group>"; };
+		9EE1268F19E910EE009EAE74 /* VPNConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNConfigManager.h; sourceTree = "<group>"; };
+		9EE1269019E910EF009EAE74 /* VPNConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNConfigManager.m; sourceTree = "<group>"; };
+		9EE1269619E91D2C009EAE74 /* TodayVPNExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayVPNExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE1269819E91D2D009EAE74 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9EE1269C19E91D2D009EAE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EE1269D19E91D2D009EAE74 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		9EE1269E19E91D2D009EAE74 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		9EE126A019E91D2D009EAE74 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		9EE126AE19E92748009EAE74 /* TodayVPNExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayVPNExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E844CB419E8D77E00718351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE1268D19E8DC8C009EAE74 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E844CCD19E8D77E00718351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1269319E91D2C009EAE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE126AB19E91D4E009EAE74 /* NetworkExtension.framework in Frameworks */,
+				9EE1269919E91D2D009EAE74 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E844CAE19E8D77E00718351 = {
+			isa = PBXGroup;
+			children = (
+				9E844CB919E8D77E00718351 /* TodayVPN */,
+				9E844CD319E8D77E00718351 /* TodayVPNTests */,
+				9EE1269A19E91D2D009EAE74 /* TodayVPNExtension */,
+				9EE1269719E91D2D009EAE74 /* Frameworks */,
+				9E844CB819E8D77E00718351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E844CB819E8D77E00718351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E844CB719E8D77E00718351 /* TodayVPN.app */,
+				9E844CD019E8D77E00718351 /* TodayVPNTests.xctest */,
+				9EE1269619E91D2C009EAE74 /* TodayVPNExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E844CB919E8D77E00718351 /* TodayVPN */ = {
+			isa = PBXGroup;
+			children = (
+				9EE1268E19E8DC8C009EAE74 /* TodayVPN.entitlements */,
+				9E844CBE19E8D77E00718351 /* AppDelegate.h */,
+				9E844CBF19E8D77E00718351 /* AppDelegate.m */,
+				9E844CC119E8D77E00718351 /* ViewController.h */,
+				9E844CC219E8D77E00718351 /* ViewController.m */,
+				9E844CC419E8D77E00718351 /* Main.storyboard */,
+				9E844CC719E8D77E00718351 /* Images.xcassets */,
+				9E844CC919E8D77E00718351 /* LaunchScreen.xib */,
+				9E844CBA19E8D77E00718351 /* Supporting Files */,
+				9EE1268919E8DC1C009EAE74 /* TKeyChain.h */,
+				9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */,
+				9EE1268F19E910EE009EAE74 /* VPNConfigManager.h */,
+				9EE1269019E910EF009EAE74 /* VPNConfigManager.m */,
+			);
+			path = TodayVPN;
+			sourceTree = "<group>";
+		};
+		9E844CBA19E8D77E00718351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E844CBB19E8D77E00718351 /* Info.plist */,
+				9E844CBC19E8D77E00718351 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E844CD319E8D77E00718351 /* TodayVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E844CD619E8D77E00718351 /* TodayVPNTests.m */,
+				9E844CD419E8D77E00718351 /* Supporting Files */,
+			);
+			path = TodayVPNTests;
+			sourceTree = "<group>";
+		};
+		9E844CD419E8D77E00718351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E844CD519E8D77E00718351 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EE1269719E91D2D009EAE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */,
+				9EE1269819E91D2D009EAE74 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EE1269A19E91D2D009EAE74 /* TodayVPNExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9EE126AE19E92748009EAE74 /* TodayVPNExtension.entitlements */,
+				9EE1269D19E91D2D009EAE74 /* TodayViewController.h */,
+				9EE1269E19E91D2D009EAE74 /* TodayViewController.m */,
+				9EE126A019E91D2D009EAE74 /* MainInterface.storyboard */,
+				9EE1269B19E91D2D009EAE74 /* Supporting Files */,
+			);
+			path = TodayVPNExtension;
+			sourceTree = "<group>";
+		};
+		9EE1269B19E91D2D009EAE74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EE1269C19E91D2D009EAE74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E844CB619E8D77E00718351 /* TodayVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E844CDA19E8D77E00718351 /* Build configuration list for PBXNativeTarget "TodayVPN" */;
+			buildPhases = (
+				9E844CB319E8D77E00718351 /* Sources */,
+				9E844CB419E8D77E00718351 /* Frameworks */,
+				9E844CB519E8D77E00718351 /* Resources */,
+				9EE126AA19E91D2D009EAE74 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE126A319E91D2D009EAE74 /* PBXTargetDependency */,
+				9EE126A619E91D2D009EAE74 /* PBXTargetDependency */,
+			);
+			name = TodayVPN;
+			productName = TodayVPN;
+			productReference = 9E844CB719E8D77E00718351 /* TodayVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E844CCF19E8D77E00718351 /* TodayVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E844CDD19E8D77E00718351 /* Build configuration list for PBXNativeTarget "TodayVPNTests" */;
+			buildPhases = (
+				9E844CCC19E8D77E00718351 /* Sources */,
+				9E844CCD19E8D77E00718351 /* Frameworks */,
+				9E844CCE19E8D77E00718351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E844CD219E8D77E00718351 /* PBXTargetDependency */,
+			);
+			name = TodayVPNTests;
+			productName = TodayVPNTests;
+			productReference = 9E844CD019E8D77E00718351 /* TodayVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EE1269519E91D2C009EAE74 /* TodayVPNExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE126A719E91D2D009EAE74 /* Build configuration list for PBXNativeTarget "TodayVPNExtension" */;
+			buildPhases = (
+				9EE1269219E91D2C009EAE74 /* Sources */,
+				9EE1269319E91D2C009EAE74 /* Frameworks */,
+				9EE1269419E91D2C009EAE74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayVPNExtension;
+			productName = TodayVPNExtension;
+			productReference = 9EE1269619E91D2C009EAE74 /* TodayVPNExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E844CAF19E8D77E00718351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = liulu;
+				TargetAttributes = {
+					9E844CB619E8D77E00718351 = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					9E844CCF19E8D77E00718351 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 9E844CB619E8D77E00718351;
+					};
+					9EE1269519E91D2C009EAE74 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 86V22YG725;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9E844CB219E8D77E00718351 /* Build configuration list for PBXProject "TodayVPN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E844CAE19E8D77E00718351;
+			productRefGroup = 9E844CB819E8D77E00718351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E844CB619E8D77E00718351 /* TodayVPN */,
+				9E844CCF19E8D77E00718351 /* TodayVPNTests */,
+				9EE1269519E91D2C009EAE74 /* TodayVPNExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E844CB519E8D77E00718351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E844CC619E8D77E00718351 /* Main.storyboard in Resources */,
+				9E844CCB19E8D77E00718351 /* LaunchScreen.xib in Resources */,
+				9E844CC819E8D77E00718351 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E844CCE19E8D77E00718351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1269419E91D2C009EAE74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE126A119E91D2D009EAE74 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E844CB319E8D77E00718351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE1269119E910EF009EAE74 /* VPNConfigManager.m in Sources */,
+				9E844CC319E8D77E00718351 /* ViewController.m in Sources */,
+				9E844CC019E8D77E00718351 /* AppDelegate.m in Sources */,
+				9EE1268B19E8DC1C009EAE74 /* TKeyChain.m in Sources */,
+				9E844CBD19E8D77E00718351 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E844CCC19E8D77E00718351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E844CD719E8D77E00718351 /* TodayVPNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1269219E91D2C009EAE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE126AC19E91D55009EAE74 /* TKeyChain.m in Sources */,
+				9EE126AD19E91D55009EAE74 /* VPNConfigManager.m in Sources */,
+				9EE1269F19E91D2D009EAE74 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E844CD219E8D77E00718351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E844CB619E8D77E00718351 /* TodayVPN */;
+			targetProxy = 9E844CD119E8D77E00718351 /* PBXContainerItemProxy */;
+		};
+		9EE126A319E91D2D009EAE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EE1269519E91D2C009EAE74 /* TodayVPNExtension */;
+			targetProxy = 9EE126A219E91D2D009EAE74 /* PBXContainerItemProxy */;
+		};
+		9EE126A619E91D2D009EAE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EE1269519E91D2C009EAE74 /* TodayVPNExtension */;
+			targetProxy = 9EE126A519E91D2D009EAE74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E844CC419E8D77E00718351 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E844CC519E8D77E00718351 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E844CC919E8D77E00718351 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E844CCA19E8D77E00718351 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E844CD819E8D77E00718351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E844CD919E8D77E00718351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E844CDB19E8D77E00718351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayVPN/TodayVPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TodayVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E844CDC19E8D77E00718351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayVPN/TodayVPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TodayVPN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9E844CDE19E8D77E00718351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayVPN.app/TodayVPN";
+			};
+			name = Debug;
+		};
+		9E844CDF19E8D77E00718351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayVPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayVPN.app/TodayVPN";
+			};
+			name = Release;
+		};
+		9EE126A819E91D2D009EAE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayVPNExtension/TodayVPNExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayVPNExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EE126A919E91D2D009EAE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayVPNExtension/TodayVPNExtension.entitlements;
+				INFOPLIST_FILE = TodayVPNExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E844CB219E8D77E00718351 /* Build configuration list for PBXProject "TodayVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E844CD819E8D77E00718351 /* Debug */,
+				9E844CD919E8D77E00718351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E844CDA19E8D77E00718351 /* Build configuration list for PBXNativeTarget "TodayVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E844CDB19E8D77E00718351 /* Debug */,
+				9E844CDC19E8D77E00718351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E844CDD19E8D77E00718351 /* Build configuration list for PBXNativeTarget "TodayVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E844CDE19E8D77E00718351 /* Debug */,
+				9E844CDF19E8D77E00718351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE126A719E91D2D009EAE74 /* Build configuration list for PBXNativeTarget "TodayVPNExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE126A819E91D2D009EAE74 /* Debug */,
+				9EE126A919E91D2D009EAE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E844CAF19E8D77E00718351 /* Project object */;
+}
