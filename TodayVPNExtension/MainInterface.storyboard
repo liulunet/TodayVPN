@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URn-RV-WmU">
@@ -30,7 +30,7 @@
                                     <action selector="btnConnect:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="F80-cr-f8O"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
                                 <rect key="frame" x="100" y="15" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="awH-l7-L00"/>
@@ -40,12 +40,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-t5-Ra5">
+                                <rect key="frame" x="36" y="58" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="qWe-wP-3yi"/>
+                                    <constraint firstAttribute="width" constant="48" id="tBN-eB-xI4"/>
+                                </constraints>
+                                <state key="normal" title="Data">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCellularDataClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="pHs-xT-pFv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-zg-KSf">
+                                <rect key="frame" x="100" y="71" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5cy-dC-UNu"/>
+                                    <constraint firstAttribute="height" constant="21" id="EYt-i0-LOa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="URn-RV-WmU" secondAttribute="centerX" constant="100" id="5dE-7H-eV2"/>
+                            <constraint firstAttribute="centerX" secondItem="ZRO-t5-Ra5" secondAttribute="centerX" constant="100" id="Eez-EH-xxK"/>
+                            <constraint firstAttribute="centerY" secondItem="wgf-zg-KSf" secondAttribute="centerY" constant="-25.5" id="EhW-Qf-aXM"/>
                             <constraint firstAttribute="centerX" secondItem="GcN-lo-r42" secondAttribute="centerX" constant="-40" id="VTU-RR-ub9"/>
-                            <constraint firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" id="lVW-9h-KSq"/>
-                            <constraint firstAttribute="centerY" secondItem="URn-RV-WmU" secondAttribute="centerY" id="zmb-XT-MfD"/>
+                            <constraint firstAttribute="centerX" secondItem="wgf-zg-KSf" secondAttribute="centerX" constant="-40" id="cMl-95-ysK"/>
+                            <constraint firstAttribute="centerY" secondItem="ZRO-t5-Ra5" secondAttribute="centerY" constant="-26" id="lUG-hh-IoX"/>
+                            <constraint firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" constant="30.5" id="lVW-9h-KSq"/>
+                            <constraint firstAttribute="centerY" secondItem="URn-RV-WmU" secondAttribute="centerY" constant="30" id="zmb-XT-MfD"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -53,9 +81,11 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="52"/>
+                    <size key="freeformSize" width="320" height="112"/>
                     <connections>
+                        <outlet property="btnCellularData" destination="ZRO-t5-Ra5" id="bXE-7N-efu"/>
                         <outlet property="btnConnect" destination="URn-RV-WmU" id="Uxn-vh-GnN"/>
+                        <outlet property="lblCellularState" destination="wgf-zg-KSf" id="fXl-4h-bQ9"/>
                         <outlet property="lblState" destination="GcN-lo-r42" id="Stt-ga-0lc"/>
                     </connections>
                 </viewController>

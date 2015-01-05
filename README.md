@@ -12,3 +12,9 @@ Second, set the capabilities in both *TodayVPN* and *TodayVPNExtension* Target:
 ![VPN Configuration & Control](https://raw.githubusercontent.com/liulunet/TodayVPN/master/XcodeCapabilities.png)
 
 ![Screenshot](https://raw.githubusercontent.com/liulunet/TodayVPN/master/Screenshot.gif)
+
+**New**
+
+* cellular data switch
+
+	![Screenshot](https://raw.githubusercontent.com/liulunet/TodayVPN/master/Screenshot.PNG)

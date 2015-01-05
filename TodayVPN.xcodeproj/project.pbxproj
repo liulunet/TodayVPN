@@ -14,6 +14,7 @@
 		9E844CC819E8D77E00718351 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E844CC719E8D77E00718351 /* Images.xcassets */; };
 		9E844CCB19E8D77E00718351 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E844CC919E8D77E00718351 /* LaunchScreen.xib */; };
 		9E844CD719E8D77E00718351 /* TodayVPNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E844CD619E8D77E00718351 /* TodayVPNTests.m */; };
+		9E88A6BE1A5A93FE00CD5356 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E88A6BD1A5A93FE00CD5356 /* CoreTelephony.framework */; };
 		9EE1268B19E8DC1C009EAE74 /* TKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */; };
 		9EE1268D19E8DC8C009EAE74 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */; };
 		9EE1269119E910EF009EAE74 /* VPNConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1269019E910EF009EAE74 /* VPNConfigManager.m */; };
@@ -78,6 +79,7 @@
 		9E844CD019E8D77E00718351 /* TodayVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E844CD519E8D77E00718351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E844CD619E8D77E00718351 /* TodayVPNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayVPNTests.m; sourceTree = "<group>"; };
+		9E88A6BD1A5A93FE00CD5356 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		9EE1268919E8DC1C009EAE74 /* TKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKeyChain.h; sourceTree = "<group>"; };
 		9EE1268A19E8DC1C009EAE74 /* TKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKeyChain.m; sourceTree = "<group>"; };
 		9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E88A6BE1A5A93FE00CD5356 /* CoreTelephony.framework in Frameworks */,
 				9EE126AB19E91D4E009EAE74 /* NetworkExtension.framework in Frameworks */,
 				9EE1269919E91D2D009EAE74 /* NotificationCenter.framework in Frameworks */,
 			);
@@ -191,6 +194,7 @@
 		9EE1269719E91D2D009EAE74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E88A6BD1A5A93FE00CD5356 /* CoreTelephony.framework */,
 				9EE1268C19E8DC8C009EAE74 /* NetworkExtension.framework */,
 				9EE1269819E91D2D009EAE74 /* NotificationCenter.framework */,
 			);
