@@ -1,7 +1,7 @@
 TodayVPN
 ========
 
-Inspired from [Mohammad M. Ramezanpour](http://ramezanpour.net/post/2014/08/03/configure-and-manage-vpn-connections-programmatically-in-ios-8/)
+Inspired from [Mohammad M. Ramezanpour](http://ramezanpour.net/post/2014/08/03/configure-and-manage-vpn-connections-programmatically-in-ios-8/) [中文](http://liulunet.github.io/blog/2014/12/27/Configure-and-manage-VPN-connections-programmatically-in-iOS-8/)
 
 First, you should update your provisioning profiles:Enable *App Group* and *VPN Configuration & Control*. 
 
